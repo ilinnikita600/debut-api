@@ -15,9 +15,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
-import org.springframework.http.HttpEntity;
-
-import java.util.stream.Stream;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
@@ -31,8 +28,6 @@ class RegisterCandidateServiceFeignImplTest {
     private RegisterCandidateService registerCandidateService = new RegisterCandidateServiceFeignImpl( null);
     @Captor
     private ArgumentCaptor<SetStatusRequest> setStatusRequestArgumentCaptor;
-    @Captor
-    private ArgumentCaptor<HttpEntity<SetStatusRequest>> entityWithSetStatusRequestCaptor;
 
     @BeforeEach
     public void setUp() {
