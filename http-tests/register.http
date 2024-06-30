@@ -1,0 +1,9 @@
+POST http://localhost:8080/candidate/register
+Content-Type: application/json
+
+{
+  "last_name": "Ильин",
+  "first_name": "Никита",
+  "email": "ilinnikita600@gmail.com",
+  "role": "Разработчик Java"
+}

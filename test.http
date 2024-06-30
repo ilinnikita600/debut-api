@@ -1,0 +1,22 @@
+POST http://193.19.100.32:7000/api/sign-up
+
+{
+  "last_name": "Ильин",
+  "first_name": "Никита",
+  "email": "ilinnikita600@gmail.com",
+  "role": "Разработчик Java"
+}
+
+###
+
+GET http://193.19.100.32:7000/api/get-code?email=ilinnikita600@gmail.com
+
+###
+
+POST http://193.19.100.32:7000/api/set-status
+
+{
+  "token": "aWxpbm5pa2l0YTYwMEBnbWFpbC5jb206ZTRlOGIxYzZiOGVkNjA1ZjM2ZDUzZjllOTVlMTFhYWI=",
+  "status": "increased"
+}
+
